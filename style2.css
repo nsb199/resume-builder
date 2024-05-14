@@ -288,17 +288,12 @@ a {
 }
 
 .btn-primary {
-    background-color: var(--clr-blue);
+    background-color: #18212f;
     color: var(--clr-white);
-    border: 1px solid var(--clr-blue);
     transition: var(--transition);
+    border-radius: 150px;
 }
 
-.btn-primary:hover {
-    background-color: transparent;
-    color: var(--clr-dark);
-    border-color: var(--clr-grey);
-}
 
 .btn-secondary {
     background-color: transparent;
@@ -321,19 +316,39 @@ a {
 /* resume page */
 #about-sc {
     padding: 64px 0;
+    margin-left: 10%;
+
 }
 
 .cv-form-row-title {
-  padding: 0 3rem;
-}
-
-.cv-form-row-title h3 {
+    display: flex;
+    justify-content: center;
+    padding: 0 3rem;
+  }
+  
+  .cv-form-row-title h3 {
     color: var(--clr-white);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-size: 2.7rem;
+    margin: 0; /* Remove default margin */
+  }
+  
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Adjust alignment as needed */
+  
 }
+
+.cv-form-row {
+    width: 100%;
+    max-width: 1200px;
+  
+}
+
 
 .cv-form-blk {
     margin: 3rem 0;
@@ -348,9 +363,10 @@ textarea {
     resize: none;
 }
 
+
 .form-elem {
     margin-bottom: 3rem;
-
+    
     position: relative;
 }
 
@@ -368,7 +384,7 @@ textarea {
     font-size: 14px;
     padding: 0.8rem 1.6rem;
     font-family: inherit;
-    width: 60%;
+
     outline: 0;
     transition: var(--transition);
 }
@@ -396,11 +412,14 @@ textarea {
     width: 100px;
     height: 35px;
     border-radius: 10px;
-    background-color: rgb(41, 180, 117);
-    font-size: 1.6rem;
+    background-color: #1f2937;
+    font-size: 1.2rem;
     color: var(--clr-white);
-    margin: 1rem 0;
+    margin: 0 auto; 
+    
+    display: block;
 }
+
 
 .repeater-remove-btn {
     position: absolute;
@@ -425,6 +444,8 @@ textarea {
     grid-template-columns: 32% auto;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     overflow: hidden;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .preview-cnt-l {
